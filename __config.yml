@@ -1,0 +1,16 @@
+# Site settings
+title: joanne's blog 
+author: joanne 
+description: minimalist blog using planetjekyll's jekyll-minimal-theme as inspiration
+url: tbd 
+github_username:  joannex
+
+# Build settings
+markdown: kramdown
+
+sass:
+	sass_dir: css
+	style: expanded
+
+
+
