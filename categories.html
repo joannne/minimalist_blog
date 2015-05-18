@@ -1,0 +1,28 @@
+---
+layout: default
+title: categories
+---
+
+<h1>categories</h1>
+
+{% for category in site.categories %}
+  <class name="{{ category | first }}">{{ category | first }}</class>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+
+      {% if post.url %}
+      <div id="category-container">
+      <div id="title"> 
+        <a href="{{ post.url }}">{{ post.title }}</a> 
+      </div>
+      <div id="date">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </div>
+      </div>
+      <br>
+     	{% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+{% endfor %}

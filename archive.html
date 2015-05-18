@@ -1,0 +1,21 @@
+---
+layout: default
+title: archive
+---
+
+<h1>archive</h1>
+
+{% for post in site.posts %}
+
+<div id="post-container">
+<div id="post-date"> 
+  {{ post.date | date: "%b %-d, %Y" }}
+    » </div>
+<div id="post-title"> 
+  <span class='post-title'>
+    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </span>
+</div>
+</div>
+
+{% endfor %}

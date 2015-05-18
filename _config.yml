@@ -1,0 +1,10 @@
+title: 'joanne&#39;s thoughts'
+github: 'joannex'
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+categories: [general, me, writing]

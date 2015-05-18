@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title }} - {{ site.title }}</title>
+   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" >
+</head>
+<body>
+
+<div class="container">
+<header class="masthead">
+   <h3 class="masthead-title">
+     <a href="{{ site.url }}/"> {{ site.title }}</a>
+     <small>
+        &nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/archive.html">archive</a>
+     </small>
+     <small>
+       &nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/about.html">about</a>
+     </small>
+     <small>
+       &nbsp;&nbsp;&nbsp;<a href="{{ site.url }}/categories.html">categories</a>
+     </small>
+   </h3>
+</header>
+
+<div id="content">
+  {{ content }}
+</div>
+
+</div><!-- .container -->
+</body>
+</html>
